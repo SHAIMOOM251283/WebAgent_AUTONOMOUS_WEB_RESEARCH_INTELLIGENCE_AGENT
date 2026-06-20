@@ -1,4 +1,4 @@
-# WebAgent_AUTONOMOUS_WEB_RESEARCH_INTELLIGENCE_AGENT
+# **WebAgent_AUTONOMOUS_WEB_RESEARCH_INTELLIGENCE_AGENT**
 
 A self-directed research agent that takes a natural language goal, searches the web, reads pages, stores findings, and delivers a structured intelligence report — without any manual steps from the user.
 
@@ -6,7 +6,7 @@ Built with LangGraph, Groq, Gemini, Playwright, ChromaDB, and Flask.
 
 ---
 
-## App in Action
+## **App in Action**
 
 ![WebAgent Landing Page](images/webagent_landing.png)
 
@@ -16,7 +16,7 @@ Built with LangGraph, Groq, Gemini, Playwright, ChromaDB, and Flask.
 
 ---
 
-## What it does
+## **What it does**
 
 You type a research goal. The agent decides everything else.
 
@@ -26,7 +26,7 @@ The report streams back to the browser in real time — you watch it appear word
 
 ---
 
-## Repository Structure
+## **Repository Structure**
 
 ```
 WebAgent_AUTONOMOUS_WEB_RESEARCH_INTELLIGENCE_AGENT (repo root)
@@ -66,7 +66,7 @@ Goal → web_search → fetch_page → store_finding → evaluate
 
 ---
 
-## Tech stack
+## **Tech stack**
 
 | Layer | Technology |
 |---|---|
@@ -85,7 +85,7 @@ All LLM computation runs on cloud APIs. No local LLM. No GPU required.
 
 ---
 
-## Design decisions
+## **Design decisions**
 
 **Groq as primary LLM.** Groq drives the entire agent loop — all tool call decisions, search query planning, content evaluation, and iteration logic. The free tier provides 14,400 requests/day with no credit card required. `llama-3.1-8b-instant` is fast enough for an interactive research loop.
 
@@ -101,7 +101,7 @@ All LLM computation runs on cloud APIs. No local LLM. No GPU required.
 
 ---
 
-## Setup
+## **Setup**
 
 **Prerequisites:** Python 3.10+, Groq and Gemini API keys (both free, no credit card).
 
@@ -148,7 +148,7 @@ Open `http://localhost:5000` in your browser.
 
 ---
 
-## Running the self-tests
+## **Running the self-tests**
 
 Each module has a built-in self-test. Run them in dependency order from inside the `WebAgent/` directory to verify each layer before launching the full app:
 
@@ -164,7 +164,7 @@ python app/app.py                   # Full application
 
 ---
 
-## How the report is structured
+## **How the report is structured**
 
 Every research session produces a four-section markdown report:
 
@@ -178,7 +178,7 @@ Every research session produces a four-section markdown report:
 
 ---
 
-## Known limitations
+## **Known limitations**
 
 - Groq's free tier has a 6,000 tokens-per-minute (TPM) limit. The agent makes multiple LLM calls per session, each carrying the accumulated conversation history. Allow approximately 60 seconds between research sessions to stay within this limit.
 - Page content is truncated to 500 characters per page to keep the token count within Groq's free tier TPM limit. This keeps the agent loop reliable but limits report depth. Upgrading to Groq's Developer tier removes this constraint.
@@ -188,7 +188,7 @@ Every research session produces a four-section markdown report:
 
 ---
 
-## Author
+## **Author**
 
 **Shaimoom Shahriar**
 
