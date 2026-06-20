@@ -191,6 +191,7 @@ Every research session produces a four-section markdown report:
 ## Author
 
 **Shaimoom Shahriar**
+
 Self-taught AI & Data Developer
 
 [GitHub](https://github.com/SHAIMOOM251283)
