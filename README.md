@@ -191,6 +191,10 @@ Every research session produces a four-section markdown report:
 ## Author
 
 **Shaimoom Shahriar**
-Self-taught AI & Data Engineer
+Self-taught AI & Data Developer
 
-[GitHub](https://github.com/SHAIMOOM251283) · [LinkedIn](https://www.linkedin.com/in/shaimoom-shahriar-18a1a0330/) · [Upwork](https://www.upwork.com/freelancers/~0187163401c731d145)
+[GitHub](https://github.com/SHAIMOOM251283)
+
+[LinkedIn](https://www.linkedin.com/in/shaimoom-shahriar-18a1a0330/)
+
+[Upwork](https://www.upwork.com/freelancers/~0187163401c731d145)
