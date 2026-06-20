@@ -1,0 +1,36 @@
+# ============================================================
+# WebAgent — Autonomous Web Research & Intelligence Agent
+# requirements.txt
+# ============================================================
+# Install with:  pip install -r requirements.txt
+# Then run:      playwright install chromium
+# ============================================================
+
+# --- Agent Framework ---
+langchain
+langchain-core
+langchain-community
+langgraph
+
+# --- LLM Providers (both free, no credit card) ---
+langchain-groq
+langchain-google-genai
+
+# --- Web Search (no API key required) ---
+ddgs
+
+# --- Web Scraping ---
+playwright
+beautifulsoup4
+lxml
+
+# --- Vector Store & Embeddings ---
+chromadb
+sentence-transformers
+
+# --- Web Application ---
+flask
+flask-cors
+
+# --- Utilities ---
+tenacity
